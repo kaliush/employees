@@ -25,9 +25,30 @@ The Employees Application is a web-based application built with Laravel, utilizi
 
 - Composer
 
+## Installation via Docker
+
+- Clone the repository:
+
+```bash
+  git clone https://github.com/kaliush/employees.git
+```
+- Navigate to the project directory:
+ ```bash
+  cd employees
+```   
+- Build the Docker Image:
+ ```bash
+  docker build -t employees .
+```  
+- Run the Docker Container:
+ ```bash
+  docker run -p 8080:8080 employees
+```  
+- Access your application at http://localhost:8080
 
 
-## Installation
+
+## Installation via Composer
 
 - Clone the repository:
 
