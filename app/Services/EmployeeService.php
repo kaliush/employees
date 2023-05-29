@@ -48,7 +48,7 @@ readonly class EmployeeService
     public function update(Employee $employee, UpdateEmployeeDto $dto): bool
     {
         try {
-            if (($dto->manager_id) !== null) {
+            if (($dto->manager_id) !== null && $employee->manager_id !== $dto->manager_id) {
                 $this->managerService->assignManager($employee, $dto->manager_id);
             }
 

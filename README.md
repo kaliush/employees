@@ -19,8 +19,6 @@ The Employees Application is a web-based application built with Laravel, utilizi
 
 - Laravel 10.9.2
 
-- Vite 4.3.4
-
 - MySQL
 
 - Composer
