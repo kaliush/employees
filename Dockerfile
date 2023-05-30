@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-LABEL maintainer="Igorek"
+LABEL maintainer="Igor Kaliush"
 
 ARG WWWGROUP=1000
 ARG NODE_VERSION=18

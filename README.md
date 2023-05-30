@@ -30,17 +30,17 @@ The Employees Application is a web-based application built with Laravel, utilizi
 ```bash
   git clone https://github.com/kaliush/employees.git
 ```
-- Navigate to the project directory:
+- Create .env file from .env.example:
  ```bash
-  cd employees
+  cp .env.example .env
 ```   
-- Build the Docker Image:
- ```bash
-  docker build -t employees .
-```  
 - Run the Docker Container:
  ```bash
-  docker run -p 8080:8080 employees
+  docker-compose up -d
+```  
+- Make migrations and seed the database:
+ ```bash
+  docker-compose exec app php artisan migrate --seed
 ```  
 - Access your application at http://localhost:8080
 
